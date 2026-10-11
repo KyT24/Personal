@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+  --font-serif: "Source Serif 4 Variable", Georgia, serif;
+  --color-page: var(--page);
+  --color-panel: var(--panel);
+  --color-line: var(--line);
+  --color-main: var(--main);
+  --color-muted: var(--muted);
+  --color-karma: var(--karma);
+  --color-on-karma: var(--on-karma);
+}
+
+:root {
+  --page: #ffffff;
+  --panel: #f1f5f9;
+  --line: #cbd5e1;
+  --main: #0f172a;
+  --muted: #475569;
+  --karma: #0a6fb8;
+  --on-karma: #ffffff;
+}
+
+.dark {
+  --page: #1e1f24;
+  --panel: #2a2b31;
+  --line: #3a3b42;
+  --main: #f1f5f9;
+  --muted: #a8adb8;
+  --karma: #2cb1ff;
+  --on-karma: #06121f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
